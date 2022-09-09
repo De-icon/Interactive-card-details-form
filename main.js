@@ -1,12 +1,10 @@
 
-
-
 const cardNum = document.querySelector("#cardNum")
 const cardName = document.querySelector("#cardName")
 const cardDate = document.querySelector("#cardDate")
 const month = document.querySelector("#month")
 const year = document.querySelector("#year")
-const name = document.querySelector("#name")
+const NAME = document.querySelector("#name")
 const Month = document.querySelector("#Month")
 const Year = document.querySelector("#Year")
 const cvc = document.querySelector("#cvc")
@@ -23,3 +21,7 @@ submit.addEventListener('click', () => {
     cardNum.innerHTML = test.innerHTML
 
 })
+function nameInput() {
+    cardName.innerHTML = NAME.innerHTML.replace
+    cardName.innerHTML.replace({n})
+}
