@@ -104,5 +104,17 @@
   width: 100px;
 }
 .main .rightCont form button {
-  width: 100px;
+  width: 95%;
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(278deg, 68%, 11%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.main .rightCont #thankYou {
+  display: none;
+  margin-top: 50%;
+  background: blue;
 }/*# sourceMappingURL=style.css.map */
