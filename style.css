@@ -6,6 +6,35 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
+body {
+  position: relative;
+}
+body .thank {
+  display: none;
+  position: absolute;
+  top: 32%;
+  right: 20%;
+  text-align: center;
+}
+body .thank h1 {
+  color: hsl(278deg, 68%, 11%);
+  margin: 10px 0;
+}
+body .thank p {
+  color: hsl(270deg, 4%, 78%);
+  margin-bottom: 20px;
+}
+body .thank .continue {
+  color: hsl(0deg, 0%, 100%);
+  padding: 5px 30px;
+  background: hsl(278deg, 68%, 11%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .display {
+  display: block;
+}
+
 .main {
   width: 100%;
   height: 100vh;
@@ -77,6 +106,9 @@
   width: 320px;
   color: hsl(278deg, 68%, 11%);
 }
+.main .rightCont form .error {
+  border: 2px solid hsl(0deg, 100%, 66%);
+}
 .main .rightCont form label {
   font-size: 0.8rem;
   margin-bottom: 5px;
@@ -113,8 +145,32 @@
   border-radius: 10px;
   cursor: pointer;
 }
-.main .rightCont #thankYou {
+.main .rightCont .noDisplay {
   display: none;
-  margin-top: 50%;
-  background: blue;
+}
+
+@media screen and (max-width: 376px) {
+  body .thank {
+    top: 50%;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .leftCont {
+    width: 100vw;
+    height: 50%;
+  }
+  .main .leftCont .frontCard {
+    top: 60%;
+    left: 5%;
+    z-index: 1;
+  }
+  .main .leftCont .backCard {
+    top: 20%;
+    left: 45px;
+  }
+  .main .rightCont {
+    width: 100vw;
+  }
 }/*# sourceMappingURL=style.css.map */

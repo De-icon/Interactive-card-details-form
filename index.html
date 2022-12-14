@@ -12,7 +12,7 @@
     <div class="leftCont">
       <div class="frontCard">
         <img src="/images/card-logo.svg" alt="">
-        <div class="cardNum" id="cardNum"></div>
+        <div class="cardNum" id="cardNum">0000 0000 0000 0000</div>
         <div class="names">
           <div class="cardName" id="cardName">Jane Appleseed</div>
           <div class="cardDate" id="cardDate"><span id="month">00</span>/<span id="year">00</span></div>
@@ -26,7 +26,7 @@
     <div class="rightCont">
       <form action="">
         <label for="name">CARDHOLDER NAME</label>
-        <input type="text" name="name" class="nameholder" id="name" onclick="nameInput()" placeholder="e.g. Jane Appleseed" value="">
+        <input type="text" name="name" class="nameholder" id="name" oninput="nameInput()" placeholder="e.g. Jane Appleseed" value="">
 
         <label for="credit-card">CARD NUMDER</label>
         <input type="text" class="form-control" oninput="formatCreditCard()" placeholder="e.g. 1234 5678 9123 0000" name="card-number" id="credit_card" value="" maxlength="20" >
@@ -47,14 +47,16 @@
         <button class="submit" id="submit" >Confirm</button>
        </div>
       </form>
-      <!-- Completed state start -->
-      <!-- <div class="thank" id="thankYou">
-        <h1>Thank you!</h1>
-        <p>We've added your card details</p>
-        <div class="continue" id="continue">Continue</div>
-      </div> -->
     </div>
   </div>
+
+  <div class="thank" id="thankYou">
+    <img src="/images/icon-complete.svg" alt="">
+      <h1>Thank you!</h1>
+    <p>We've added your card details</p>
+    <div class="continue" id="Continue">Continue</div>
+  </div>
+
   <script src="main.js"></script>
   
 </body>
